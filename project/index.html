@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do list</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body > 
+    <div class="fluid-container position-relative">
+        <div class="container content">
+            <div class="container mx-auto mt-10 max-w-md custom-container p-4">
+                <h1 class="text-4xl font-bold text-center border-b-2 border-black pb-2 mb-4">
+                    Shopping cart
+                    <i class="fas fa-shopping-cart ml-2"></i>
+                </h1>
+            </div>
+            <h6 class="text-center text-red-900" >Please enter valid data (just Products Names Except Special Characters)!</h6>
+            <form id="add-form" class="border border-gray-300 p-4 mb-4 flex justify-center items-center">
+                <input type="text" id="new-task" placeholder="Add a new task..." class="mr-2 border border-gray-300 p-2 rounded">
+                <button type="submit" class="bg-black text-white px-4 py-2 rounded">Add Task</button>
+            </form>
+            <ul id="tasks-list"></ul>
+            <button id="calculate-bill" class="bg-black text-white px-4 py-2 rounded">Calculate Bill</button>
+            <div id="total-bill"></div>
+            <button id="reset" class="bg-red-500 text-white px-4 py-2 rounded mt-4">Reset</button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
